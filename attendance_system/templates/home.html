@@ -1,0 +1,28 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" >
+</head>
+<body>
+<div class="login-page">
+    <h1>Attendance system</h1>
+  <div class="form">
+    <form class="login-form" method="post" action="../upload" enctype="multipart/form-data">
+        {% csrf_token %}
+      <input type="text" name="txtTrainerName" placeholder="Enter Trainer's Name"/>
+      <input type="email" name="trainerEmail" placeholder="Trainer's Email"/>
+      <select name="batch_name">
+          <option selected="selected" disabled>Select Batch:</option>
+        {% for element in objectlist %}
+        <option value={{ element.id }}>{{ element.batch_name }}
+        {% endfor %}
+      </select>
+        <input name="filesToUpload" id="filesToUpload" type="file" multiple="" /><br>
+      <button>Create & Send Report</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

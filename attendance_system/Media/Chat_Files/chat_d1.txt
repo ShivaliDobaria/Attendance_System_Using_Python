@@ -1,0 +1,8 @@
+19:25:12	 From  Nikhil : compiler means compile the all code one tym and get the output and errror
+19:25:15	 From  prince : basically all are converting into binary
+19:25:16	 From  Shivali: interpretor line by line 
+19:25:25	 From  Nilay: 5678492736 
+19:30:25	 From  Nikhil : 8299020119
+19:32:16	 From  Àkäsh : 8368515125 :-)
+19:35:12	 From  Shivali: 8127160447
+
